@@ -103,21 +103,22 @@
             <div class="section">
               
                 <h1 id="_1">如何创建子站</h1>
-<p>有了主站,如 <strong>ywshz.github.io</strong>后, 一般我们还会想要子站,如**ywshz.github.io/notes, 那么该如何实现呢?</p>
+<p>有了主站,如 <strong>ywshz.github.io</strong>后, 一般我们还会想要子站,如<strong>ywshz.github.io/notes</strong>, 那么该如何实现呢?</p>
 <p>其实github pages也为我们提供了这个功能, 只不过稍微要麻烦一点点, 要先建有个repo,再在该repo上新建一个名为gh-pages的分支, 这个分支根目录下要有index.html, 这样就可以了.</p>
 <hr />
 <ul>
 <li>
 <p>clone并创建分支并提交到分支</p>
-<p><code>git clone https://github.com/ywshz/notes.git notes
+<p><code>bash
+git clone https://github.com/ywshz/notes.git notes
 cd notes
 git checkout --orphan gh-pages
 git rm -rf . 如果有必要的话
 git add .
 git commit -a -m "First pages commit"
 git push origin gh-pages</code>
-* 大功告成
-可以通过这样类型的url访问了:  <a href="../ywshz.github.io/notes">ywshz.github.io/notes</a></p>
+* 大功告成</p>
+<p>可以通过这样类型的url访问了:  <a href="../ywshz.github.io/notes">ywshz.github.io/notes</a></p>
 </li>
 </ul>
               
